@@ -294,7 +294,7 @@ def insert_tweet(connection,tweet):
             'text':remove_nulls(text),
             'country_code':remove_nulls(country_code),
             'state_code':remove_nulls(state_code),
-            'lang':remove_nulls(tweet['user']['lang']),
+            'lang':remove_nulls(tweet['lang']),
             'place_name':remove_nulls(place_name),
             'geo':f"{geo_str}({geo_coords})"
             })
